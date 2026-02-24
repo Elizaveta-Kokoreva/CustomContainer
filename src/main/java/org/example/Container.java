@@ -27,7 +27,7 @@ public class Container {
     /**
      * Увеличивает размер внутреннего массива в index раз.
      */
-    public void grow() {
+    private void grow() {
         int index = 2;
         Object[] newData = new Object[data.length * index];
         System.arraycopy(data, 0, newData, 0, data.length);
